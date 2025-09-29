@@ -1,12 +1,4 @@
-/*
-Exercise 1: maxOfTwoNumbers()
 
-In this exercise, create a function named maxOfTwoNumbers. 
-It should take two numbers as inputs and return the larger number. 
-If they're equal, return either one.
-
-Exercise 1 has been completed for you:
-*/
 
 const maxOfTwoNumbers = (x, y) => {
     if (x >= y) {
@@ -69,3 +61,28 @@ function calculateTip (billAmount, tipPercentage ) {
 }
 console.log('Exercise 7 Result:', calculateTip(50, 20))
 
+
+const convertTemperature = function(temperature, scale) {
+    if(scale === 'C') {
+        return (temperature * 9 / 5) + 32;
+    } else if (scale === 'F') {
+        return(temperature -32) * 5 / 9
+    } else {
+        return 'invalid scale'
+    }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+
+function basicCalculator (num1, num2 , operation) {
+    if (operation === 'add'){
+      return(num1 + num2)
+    } else if (operation === 'subtract'){
+      return(num1 - num2)
+    } else if(operation === 'multiply'){
+      return (num1 * num2)
+    } else (operation === 'devide')
+      return (num1/num2)
+    }
+  console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
